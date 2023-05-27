@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewCityYear"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:text="설치년도"
+        app:layout_constraintStart_toEndOf="@+id/textViewCityName"
+        app:layout_constraintTop_toTopOf="@+id/textViewCityName" />
+
+    <TextView
+        android:id="@+id/textViewCityName"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:text="작품명"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCityAddress"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:text="작품주소"
+        app:layout_constraintStart_toEndOf="@+id/textViewCityYear"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCityAddress2"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:text="상세주소"
+        app:layout_constraintStart_toStartOf="@+id/textViewCityAddress"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCityAddress" />
+</androidx.constraintlayout.widget.ConstraintLayout>
